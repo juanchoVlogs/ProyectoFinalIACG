@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CambioCamara.js">
+    <Files>
+      <File FileName="Assets\CambioCamara.js" Line="20" Column="2" />
+      <File FileName="Assets\Enemigos\enemigo muerte basica.js" Line="1" Column="1" />
+      <File FileName="Assets\CambiarEscenario.js" Line="1" Column="1" />
+      <File FileName="Assets\Recursos survival\scripts\Survivalcontroller.js" Line="1" Column="1" />
+      <File FileName="Assets\Enemigos\matazombisJS.js" Line="1" Column="1" />
+      <File FileName="Assets\AbrirPuertaFinal.js" Line="1" Column="1" />
+      <File FileName="Assets\Recursos survival\scripts\muerte.js" Line="1" Column="1" />
+      <File FileName="Assets\Enemigos\EnemigopersecutorJS.js" Line="1" Column="1" />
+      <File FileName="Assets\Enemigos\MuerteJefe.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
