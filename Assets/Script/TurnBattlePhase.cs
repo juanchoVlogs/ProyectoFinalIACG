@@ -24,7 +24,6 @@ public class TurnBattlePhase : MonoBehaviour {
 	private int hit2;
 
 
-
 	public enum BattleStance{
 		WIN,
 		LOSE, 
@@ -48,6 +47,9 @@ public class TurnBattlePhase : MonoBehaviour {
 		hit1 = 15;
 		hit2 = 30;
 		ia = new minimax(prob11, prob12, prob21, prob22, prob31, prob32, hit1, hit2);
+		string[] lines = System.IO.File.ReadAllLines("conf.txt");
+		lifeCharacter = Int32.Parse (lines [0]);
+
 		 
 	}
 	
@@ -100,6 +102,7 @@ public class TurnBattlePhase : MonoBehaviour {
 			currentState = BattleStance.PLAYERCHOICE;
 			break;
 		case (BattleStance.WIN):
+			writeFile();
 			int prevLevel = PlayerPrefs.GetInt( "previousLevel" );
 			Application.LoadLevel(prevLevel);
 			break;
@@ -110,6 +113,13 @@ public class TurnBattlePhase : MonoBehaviour {
 		}
 
 	
+	}
+
+	void writeFile(){
+		string text = lifeCharacter.ToString() ;
+		// WriteAllLines creates a file, writes a collection of strings to the file, 
+		// and then closes the file.
+		System.IO.File.WriteAllText("conf.txt", text);
 	}
 
 	void OnGUI(){
